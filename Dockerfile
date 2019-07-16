@@ -8,6 +8,4 @@ RUN yarn
 
 ENV NODE_ENV=production
 
-RUN yarn run build
-
 CMD [ "yarn", "start" ]

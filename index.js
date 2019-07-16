@@ -6,6 +6,8 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello');
 });
 
-app.listen({ port: process.env.PORT }, () => {
+const port = process.env.PORT || 3000;
+
+app.listen({ port }, () => {
     console.log(`🚀 Application is ready at http://localhost:${port}`);
 });
